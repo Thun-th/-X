@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="ระบบบริหารจัดการตารางทำงานผู้บริหารระดับสูง (Executive Duty Schedule Dashboard) - คอนโซลแสดงข้อมูลตารางปฏิบัติงานอย่างหรูหรา รวดเร็ว และรองรับมือถืออย่างสมบูรณ์แบบ">
-  <title>Executive Duty Dashboard | ระบบจัดการตารางทำงานผู้บริหาร</title>
+  <meta name="description" content="ตารางทำงาน - คอนโซลแสดงข้อมูลตารางปฏิบัติงานรายเดือนอย่างหรูหรา รวดเร็ว และรองรับมือถืออย่างสมบูรณ์แบบ">
+  <title>ตารางทำงาน | Executive Schedule Dashboard</title>
   
   <!-- Google Fonts: Prompt for Thai, Inter for English headers, Dancing Script for Signatures -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -146,7 +146,7 @@
           <span class="text-xs font-bold tracking-widest text-cyan-400 uppercase">Executive Schedule Console</span>
         </div>
         <h1 class="text-2xl md:text-3xl font-extrabold tracking-tight bg-gradient-to-r from-white via-slate-100 to-slate-400 bg-clip-text text-transparent">
-          ระบบตารางเวรปฏิบัติงานผู้บริหาร
+          ตารางทำงาน
         </h1>
         <p class="text-sm text-slate-400 mt-1">
           ตรวจสอบ จัดการ และวิเคราะห์ตารางปฏิบัติการรายเดือนของสาขา
@@ -165,73 +165,6 @@
       </div>
     </header>
 
-    <!-- Top KPI Dashboard Cards -->
-    <section class="grid grid-cols-2 lg:grid-cols-4 gap-4 mb-8">
-      <!-- Total Employees -->
-      <div class="glass-card rounded-2xl p-5 shadow-lg relative overflow-hidden group">
-        <div class="flex justify-between items-start">
-          <div>
-            <span class="text-xs font-medium text-slate-400 tracking-wider">กำลังพลทั้งหมด</span>
-            <h3 id="stat-total-staff" class="text-3xl font-extrabold text-white mt-1">0</h3>
-          </div>
-          <div class="w-10 h-10 rounded-lg bg-indigo-500/10 border border-indigo-500/20 flex items-center justify-center text-indigo-400 group-hover:scale-110 transition-transform">
-            <i class="fa-solid fa-users"></i>
-          </div>
-        </div>
-        <p class="text-[11px] text-indigo-300 mt-3 font-light">
-          <i class="fa-solid fa-circle-check mr-1 text-emerald-400"></i> พนักงานประจำศูนย์บริการ
-        </p>
-      </div>
-
-      <!-- Working Today -->
-      <div class="glass-card rounded-2xl p-5 shadow-lg relative overflow-hidden group">
-        <div class="flex justify-between items-start">
-          <div>
-            <span class="text-xs font-medium text-slate-400 tracking-wider">ปฏิบัติงานวันนี้</span>
-            <h3 id="stat-working-staff" class="text-3xl font-extrabold text-cyan-400 mt-1">0</h3>
-          </div>
-          <div class="w-10 h-10 rounded-lg bg-cyan-500/10 border border-cyan-500/20 flex items-center justify-center text-cyan-400 group-hover:scale-110 transition-transform">
-            <i class="fa-solid fa-shield-halved"></i>
-          </div>
-        </div>
-        <p class="text-[11px] text-slate-400 mt-3 font-light">
-          <span class="text-slate-300 font-semibold" id="focused-day-label">Day 26</span> (เวรกะ 10B/12)
-        </p>
-      </div>
-
-      <!-- Resting Today -->
-      <div class="glass-card rounded-2xl p-5 shadow-lg relative overflow-hidden group">
-        <div class="flex justify-between items-start">
-          <div>
-            <span class="text-xs font-medium text-slate-400 tracking-wider">วันหยุดวันนี้</span>
-            <h3 id="stat-off-staff" class="text-3xl font-extrabold text-slate-300 mt-1">0</h3>
-          </div>
-          <div class="w-10 h-10 rounded-lg bg-slate-500/10 border border-slate-500/20 flex items-center justify-center text-slate-400 group-hover:scale-110 transition-transform">
-            <i class="fa-solid fa-mug-hot"></i>
-          </div>
-        </div>
-        <p class="text-[11px] text-rose-300/80 mt-3 font-light">
-          <i class="fa-solid fa-bed mr-1 text-rose-400"></i> สิทธิ์วันหยุดพักประจำสัปดาห์ (W)
-        </p>
-      </div>
-
-      <!-- Coverage Efficiency -->
-      <div class="glass-card rounded-2xl p-5 shadow-lg relative overflow-hidden group">
-        <div class="flex justify-between items-start">
-          <div>
-            <span class="text-xs font-medium text-slate-400 tracking-wider">ความพร้อมปฏิบัติงาน</span>
-            <h3 id="stat-coverage-pct" class="text-3xl font-extrabold text-emerald-400 mt-1">0%</h3>
-          </div>
-          <div class="w-10 h-10 rounded-lg bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 group-hover:scale-110 transition-transform">
-            <i class="fa-solid fa-chart-line"></i>
-          </div>
-        </div>
-        <!-- Simple custom progress bar -->
-        <div class="w-full bg-white/5 rounded-full h-1.5 mt-4">
-          <div id="stat-coverage-bar" class="bg-gradient-to-r from-emerald-500 to-cyan-400 h-1.5 rounded-full transition-all duration-500" style="width: 0%"></div>
-        </div>
-      </div>
-    </section>
 
     <!-- Date Navigation Slider / Carousel -->
     <section class="mb-8">
@@ -251,11 +184,10 @@
       </div>
     </section>
 
-    <!-- Focus Grid Layout: Focus Card & Active Timeline -->
-    <section class="grid grid-cols-1 lg:grid-cols-3 gap-6 mb-10">
+    <!-- Focus Card (Full Width Component) -->
+    <section class="mb-10">
       
-      <!-- Focus Card (Mobile Hero Component) -->
-      <div class="lg:col-span-2 glass-card rounded-3xl p-6 shadow-2xl relative overflow-hidden border border-white/10 shine-effect">
+      <div class="w-full glass-card rounded-3xl p-6 shadow-2xl relative overflow-hidden border border-white/10 shine-effect">
         <div class="absolute top-0 right-0 p-4 opacity-5 pointer-events-none">
           <i class="fa-solid fa-briefcase text-9xl text-white"></i>
         </div>
@@ -312,72 +244,6 @@
             </ul>
           </div>
 
-        </div>
-      </div>
-
-      <!-- Right Panel: Operations & Reference -->
-      <div class="glass-card rounded-3xl p-6 shadow-2xl flex flex-col justify-between">
-        <div>
-          <h3 class="text-sm font-bold uppercase tracking-wider text-slate-400 mb-4 flex items-center gap-2">
-            <i class="fa-solid fa-business-time text-indigo-400"></i> ลำดับเวลาการทับซ้อนปฏิบัติการ
-          </h3>
-          
-          <!-- Visual Timeline of shift timings -->
-          <div class="space-y-5 my-4">
-            <div>
-              <div class="flex justify-between text-xs text-slate-400 mb-1">
-                <span>08:00</span>
-                <span>12:00</span>
-                <span>16:00</span>
-                <span>20:00</span>
-                <span>24:00</span>
-              </div>
-              <div class="h-8 bg-slate-950/60 rounded-lg relative overflow-hidden border border-white/5">
-                <!-- 10B Shift representation (10:30 to 19:30) -->
-                <div class="absolute h-full bg-gradient-to-r from-cyan-500 to-cyan-600 opacity-60 flex items-center px-2 text-[10px] font-black text-slate-900" style="left: 43.75%; width: 37.5%;" title="กะ 10B: 10:30 - 19:30">
-                  10B
-                </div>
-                <!-- 12 Shift representation (12:00 to 21:00) -->
-                <div class="absolute h-full bg-gradient-to-r from-amber-500 to-amber-600 opacity-60 flex items-center justify-end px-2 text-[10px] font-black text-slate-900" style="left: 50%; width: 37.5%;" title="กะ 12: 12:00 - 21:00">
-                  12
-                </div>
-              </div>
-              <span class="text-[10px] text-slate-500 block mt-1.5 text-center">
-                ช่วงเวลาคาบเกี่ยวพนักงานปฏิบัติงานหนาแน่นสุด: 12:00 น. - 19:30 น.
-              </span>
-            </div>
-
-            <!-- Real-time dynamic shift status card -->
-            <div id="live-shift-status" class="bg-indigo-500/5 border border-indigo-500/10 rounded-xl p-3.5 flex gap-3 items-start">
-              <div class="text-indigo-400 mt-0.5 text-sm">
-                <i class="fa-solid fa-circle-info"></i>
-              </div>
-              <div>
-                <span class="text-[11px] font-bold text-indigo-400 uppercase tracking-widest block">Live Status</span>
-                <span id="live-shift-status-text" class="text-xs text-slate-300 font-light mt-0.5 block">
-                  กำลังประมวลผลข้อมูล...
-                </span>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="border-t border-white/5 pt-4 mt-4">
-          <span class="text-xs font-semibold text-slate-400 block mb-2">สัญลักษณ์ตารางทำงาน</span>
-          <div class="grid grid-cols-3 gap-2">
-            <div class="text-center p-2 rounded-lg bg-cyan-500/5 border border-cyan-500/10">
-              <span class="text-xs font-black text-cyan-400 block">10B</span>
-              <span class="text-[9px] text-slate-400">10:30-19:30</span>
-            </div>
-            <div class="text-center p-2 rounded-lg bg-amber-500/5 border border-amber-500/10">
-              <span class="text-xs font-black text-amber-400 block">12</span>
-              <span class="text-[9px] text-slate-400">12:00-21:00</span>
-            </div>
-            <div class="text-center p-2 rounded-lg bg-white/5 border border-white/5">
-              <span class="text-xs font-black text-slate-400 block">W</span>
-              <span class="text-[9px] text-slate-400">วันหยุดประจำสัปดาห์</span>
-            </div>
-          </div>
         </div>
       </div>
 
@@ -463,100 +329,12 @@
       </div>
     </section>
 
-    <!-- Signatures and Digital Approvals Block -->
-    <section class="glass-card rounded-3xl p-6 md:p-8 shadow-2xl relative overflow-hidden border border-white/10">
-      <div class="flex items-center gap-2 mb-6 border-b border-white/5 pb-4">
-        <i class="fa-solid fa-signature text-emerald-400 text-lg"></i>
-        <h2 class="text-base font-bold text-white uppercase tracking-wider">
-          การอนุมัติและรับรองความถูกต้องของเอกสาร
-        </h2>
-        <span class="ml-auto text-[10px] bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 px-2 py-0.5 rounded-full font-bold flex items-center gap-1">
-          <i class="fa-solid fa-lock"></i> SECURE SIGNED
-        </span>
-      </div>
 
-      <!-- Signature Layout -->
-      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 relative z-10">
-        
-        <!-- Prepared By -->
-        <div class="bg-slate-900/40 border border-white/5 rounded-2xl p-5 flex flex-col justify-between shadow-lg relative">
-          <div class="flex justify-between items-start mb-4">
-            <span class="text-[10px] text-slate-400 font-bold uppercase tracking-wider block">ผู้จัดทำตารางปฏิบัติงาน</span>
-            <span class="text-[9px] text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded font-bold">DIGITAL PREPARED</span>
-          </div>
-          
-          <div class="my-3 text-center">
-            <!-- Styling cursive signature -->
-            <p class="font-signature text-3xl text-slate-200 tracking-wide select-none">Benjamas Inpa</p>
-            <div class="w-40 mx-auto h-[1px] bg-white/10 mt-1"></div>
-          </div>
-          
-          <div class="mt-4 pt-3 border-t border-white/5 text-slate-400 text-xs">
-            <p class="font-bold text-slate-300 text-center">คุณ เบญจมาศ อินปา</p>
-            <p class="text-[10px] text-center mt-0.5">หัวหน้าศูนย์บริการ</p>
-            <p class="text-[10px] text-center text-slate-500 mt-2">
-              <i class="fa-regular fa-clock mr-1"></i> ได้รับอนุมัติระบบ: 01/04/2022
-            </p>
-          </div>
-        </div>
-
-        <!-- Verified By -->
-        <div class="bg-slate-900/40 border border-white/5 rounded-2xl p-5 flex flex-col justify-between shadow-lg relative">
-          <div class="flex justify-between items-start mb-4">
-            <span class="text-[10px] text-slate-400 font-bold uppercase tracking-wider block">ฝ่ายผู้ตรวจสอบข้อมูล</span>
-            <span class="text-[9px] text-emerald-400 bg-emerald-500/10 px-1.5 py-0.5 rounded font-bold">DIGITAL VERIFIED</span>
-          </div>
-          
-          <div class="my-3 text-center">
-            <p class="font-signature text-3xl text-slate-200 tracking-wide select-none">Ratchanok Siangjaem</p>
-            <div class="w-40 mx-auto h-[1px] bg-white/10 mt-1"></div>
-          </div>
-          
-          <div class="mt-4 pt-3 border-t border-white/5 text-slate-400 text-xs">
-            <p class="font-bold text-slate-300 text-center">คุณ รัชนก เสียงแจ่ม</p>
-            <p class="text-[10px] text-center mt-0.5">ฝ่ายบริหารทรัพยากรมนุษย์ (HR)</p>
-            <p class="text-[10px] text-center text-slate-500 mt-2">
-              <i class="fa-regular fa-clock mr-1"></i> ได้รับตรวจสอบระบบ: 01/04/2022
-            </p>
-          </div>
-        </div>
-
-        <!-- Approved By -->
-        <div class="bg-slate-900/40 border border-white/5 rounded-2xl p-5 flex flex-col justify-between shadow-lg relative overflow-hidden">
-          <div class="flex justify-between items-start mb-4">
-            <span class="text-[10px] text-slate-400 font-bold uppercase tracking-wider block">ผู้อนุมัติขั้นสูงสุด</span>
-            <span class="text-[9px] text-cyan-400 bg-cyan-500/10 px-1.5 py-0.5 rounded font-bold">DIGITAL APPROVED</span>
-          </div>
-
-          <!-- Digital Stamp Emblem Background -->
-          <div class="absolute right-[-10px] top-[40px] opacity-[0.03] rotate-[30deg] pointer-events-none select-none text-9xl">
-            <i class="fa-solid fa-stamp"></i>
-          </div>
-          
-          <div class="my-3 text-center flex flex-col items-center justify-center">
-            <!-- Digital signature seal / stamp concept -->
-            <div class="border-2 border-emerald-500/30 text-emerald-400/80 rounded-full px-4 py-2 text-[10px] font-black tracking-widest uppercase flex items-center gap-1.5 select-none bg-emerald-500/5 rotate-[-2deg]">
-              <i class="fa-solid fa-circle-check"></i> SECURE APPROVED
-            </div>
-            <div class="w-40 mx-auto h-[1px] bg-white/10 mt-2"></div>
-          </div>
-          
-          <div class="mt-4 pt-3 border-t border-white/5 text-slate-400 text-xs">
-            <p class="font-bold text-slate-300 text-center">ผู้จัดการแผนกปฏิบัติการ</p>
-            <p class="text-[10px] text-center mt-0.5">ฝ่ายบริหารและปฏิบัติการสาขา</p>
-            <p class="text-[10px] text-center text-slate-500 mt-2">
-              <i class="fa-regular fa-clock mr-1"></i> วันที่เอกสารมีผล: 01/04/2022
-            </p>
-          </div>
-        </div>
-
-      </div>
-    </section>
 
   </main>
 
   <footer class="w-full text-center py-8 text-[11px] text-slate-500 border-t border-white/5 mt-12 bg-slate-950/40 relative z-10">
-    <p>ระบบบริหารตารางเวรผู้บริหารสาขา © 2026 Executive Duty App. สงวนลิขสิทธิ์</p>
+    <p>ระบบตารางทำงานสาขา © 2026 Executive Duty App. สงวนลิขสิทธิ์</p>
     <p class="mt-1 text-slate-600">วิเคราะห์ข้อมูลอ้างอิงจากแบบแปลนดั้งเดิม วันที่ปรับปรุงข้อมูล 01/04/2022</p>
   </footer>
 
@@ -646,7 +424,7 @@
       // 3. Render Matrix Table headers & structures (one-time rendering)
       renderMatrixHeaders();
       
-      // 4. Update the complete view (carousel, focus cards, matrix highlights, calculations)
+      // 4. Update the complete view (carousel, focus cards, matrix highlights)
       updateView();
       
       // 5. Scroll active day button into carousel viewport center
@@ -682,43 +460,27 @@
 
         dateEl.textContent = `วัน${dayOfWeek}ที่ ${dateNum} ${month} พ.ศ. ${year}`;
         timeEl.textContent = `${hour}:${min}:${sec} น.`;
-
-        // Update Live shift coverage status text dynamically based on actual current time
-        updateLiveShiftStatus(now.getHours() + (now.getMinutes() / 60));
       }
 
       updateClock();
       setInterval(updateClock, 1000);
     }
 
-    // Dynamic Live Shift Status message
-    function updateLiveShiftStatus(currentDecimalHour) {
-      const statusTextEl = document.getElementById('live-shift-status-text');
-      
-      // Calculate shifts working at this hour
-      let activeShifts = [];
-      if (currentDecimalHour >= 10.5 && currentDecimalHour < 19.5) {
-        activeShifts.push("กะ 10B (10:30-19:30)");
-      }
-      if (currentDecimalHour >= 12.0 && currentDecimalHour < 21.0) {
-        activeShifts.push("กะ 12 (12:00-21:00)");
-      }
-
-      if (activeShifts.length > 0) {
-        statusTextEl.innerHTML = `ขณะนี้: <span class="font-bold text-cyan-400">${activeShifts.join(" และ ")}</span> กำลังปฏิบัติงานตามตารางเวรหลัก`;
-      } else {
-        statusTextEl.innerHTML = `ขณะนี้อยู่นอกช่วงเวลาหลักตารางการปฏิบัติการปกติ (08:00 - 21:00 น.)`;
-      }
-    }
-
-    // Generate Initials for employee avatar badge
+    // Generate Initials/Nicknames for employee avatar badge
     function getInitials(fullName) {
       const cleanName = fullName.replace(/\s+/g, ' ').trim();
-      const parts = cleanName.split(' ');
-      if (parts.length >= 2) {
-        return parts[0].charAt(0) + '.' + parts[1].charAt(0) + '.';
-      }
-      return cleanName.charAt(0) + '.';
+      const nicknames = {
+        "ธนัง โพธิ์ศรี": "ธันย์",
+        "อังคณา แหวนทอง": "ก้อย",
+        "นงลักษ์ พูลสิงห์": "เหม่ง",
+        "พิมญาดา ใจดี": "ฝน",
+        "ชาญวิทย์ สุนันตา": "วิทย์",
+        "เบญจมาศ อินปา": "ดาว",
+        "สุปราณี โล่ห์ทองสุวรรณ": "กุ้ง",
+        "สุปราณี โลห์ทองสุวรรณ": "กุ้ง",
+        "กัญจน์ชญา คงเครือ": "บี"
+      };
+      return nicknames[cleanName] || cleanName.substring(0, 3);
     }
 
     // Generate Roster Matrix table headers (Days list)
@@ -752,20 +514,14 @@
       // 1. Build and refresh Carousel items
       generateCarousel();
       
-      // 2. Refresh metrics dashboard
-      calculateMetrics();
-
-      // 3. Populate selected day focus details
+      // 2. Populate selected day focus details
       updateFocusDetailsCard();
 
-      // 4. Draw and filter matrix table
+      // 3. Draw and filter matrix table
       renderTableBody();
 
-      // 5. Highlight active day column
+      // 4. Highlight active day column
       highlightMatrixColumn();
-
-      // 6. Update label values
-      document.getElementById('focused-day-label').textContent = `Day ${activeDay} (${dayNames[activeDay-1]})`;
     }
 
     // Update active day and trigger UI state modifications
@@ -822,29 +578,7 @@
       }
     }
 
-    // Dynamic metrics mathematical analyzer
-    function calculateMetrics() {
-      const totalStaff = rawScheduleData.length;
-      let workingCount = 0;
-      let offCount = 0;
 
-      rawScheduleData.forEach(emp => {
-        const shiftVal = emp.shifts[activeDay - 1] || 'W';
-        if (shiftVal === 'W') {
-          offCount++;
-        } else {
-          workingCount++;
-        }
-      });
-
-      const coveragePct = Math.round((workingCount / totalStaff) * 100);
-
-      document.getElementById('stat-total-staff').textContent = totalStaff;
-      document.getElementById('stat-working-staff').textContent = workingCount;
-      document.getElementById('stat-off-staff').textContent = offCount;
-      document.getElementById('stat-coverage-pct').textContent = `${coveragePct}%`;
-      document.getElementById('stat-coverage-bar').style.width = `${coveragePct}%`;
-    }
 
     // Populate Detailed Shift focus sections (Cards)
     function updateFocusDetailsCard() {
